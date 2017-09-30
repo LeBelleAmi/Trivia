@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.lebelle.myquizapp.MainActivityProfilePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/robot"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:contentDescription="@null"
+            android:padding="2dp"
+            android:src="@drawable/robot" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="@string/profilepageinfo"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/add_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/add_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@drawable/user"
+                        android:drawableStart="@drawable/user"
+                        android:fontFamily="serif"
+                        android:hint="@string/edittext1"
+                        android:inputType="textCapWords"
+                        android:padding="16dp"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@null"
+                    android:cropToPadding="false"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gender" />
+
+                <Spinner
+                    android:id="@+id/gender"
+                    style="@style/spinner_style">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="#FF0084" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/mail_text_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/mail_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:drawableLeft="@drawable/email"
+                        android:drawableStart="@drawable/email"
+                        android:fontFamily="serif"
+                        android:hint="@string/edittext2"
+                        android:inputType="textEmailAddress"
+                        android:padding="16dp"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:padding="16dp"
+            android:text="@string/answertext11"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#FF0084" />
+
+        <CheckBox
+            android:layout_marginTop="8dp"
+            android:id="@+id/checkbox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/checkbox1"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/checkbox2"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/checkbox3"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/checkbox4"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/checkbox5"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/checkbox6"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/checkbox7"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#FF0084" />
+
+
+        <Button
+            android:id="@+id/done_button"
+            style="@android:style/Widget.DeviceDefault.Light.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button"
+            android:onClick="launchPopQuizActivity"
+            android:padding="16dp"
+            android:text="@string/button1" />
+
+    </LinearLayout>
+</ScrollView>
